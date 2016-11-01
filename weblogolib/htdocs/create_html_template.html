@@ -18,11 +18,11 @@
         color: #900;
         border-left: red solid +4pt;
     }
-    
+
     .err_msg {
         color: #900;
     }
-    
+
     .err_msg .btn {
         color: #000;
     }
@@ -90,21 +90,21 @@
                                 <div class="col-sm-4">
 
                                     <input type="file" name="sequences_file"></input>
-                                        </div> 
+                                        </div>
 
                                 <div class="col-sm-2"> <!--center spacing div-->
                                 </div>
 
                                   <!--start URL download container div-->
                                 <div class="form-group col-sm-4" id="URL-upload">
-                                    
+
                                    <label>URL:</label>
                     <input type="text" name="sequences_url" placeholder="URL of sequences" id="url-upload" value="${sequences_url}">
-                </div>                                  
-                                                        
+                </div>
+
                                 </div> <!--end URL download container div-->
                             </div> <!--start clearfix div for browse & open buttons-->
-                           
+
                             <div class="form-group">
                                 <!--open paste seqence data textbox div-->
                                 <label class="err_msg">${error_message}</label>
@@ -124,11 +124,11 @@
                                     </div>
                                     <!-- end create&clear button div-->
 
-                                    
+
                                 </div> <!--end .col-sm-8 create&clear button column-->
-                                
+
                                 <div class="col-sm-4"><!--start spacing div for download checkbox-->
-                                    
+
                                     <div class="form-group">
                                         <!--start download checkbox div-->
                                         <label>
@@ -168,7 +168,7 @@
                             <div class="form-group clearfix">
                                 <!--open output format div-->
                                 <label>Output Format:</label>
-                                
+
                                     <!--open div for format options-->
                                     <select name="format">
                                         <option ${png} value="png">PNG (low res.)</option>
@@ -177,9 +177,9 @@
                                         <option ${eps} value="eps">EPS (vector)</option>
                                         <option ${pdf} value="pdf">PDF (vector)</option>
                                         <option ${svg} value="svg">SVG (vector)</option>
-                                        <option ${logodata} value="logodata">Data (plain text)</option> 
-                                    </select> 
-                                
+                                        <option ${logodata} value="logodata">Data (plain text)</option>
+                                    </select>
+
                                 <!--close div for format options-->
                             </div>
                             <!--close output format div-->
@@ -193,7 +193,7 @@
                                     <option ${alphabet_dna} value="alphabet_dna">dna</option>
                                     <option ${alphabet_rna} value="alphabet_rna">rna</option>
                                 </select>
-                            </div> <!--close dive for sequence type option-->    
+                            </div> <!--close dive for sequence type option-->
 
                             <div class="form-group">
                                 <!--open logo-size div-->
@@ -230,6 +230,7 @@
                                     <option ${kT}>kT</option>
                                     <option ${kJ_mol}>kJ/mol</option>
                                     <option ${kcal_mol}>kcal/mol</option>
+                                    <option ${Weight}>Weight</option>
                                 </select>
                             </div>
                             <!--close Units div-->
@@ -355,11 +356,11 @@
                             <!--end color scheme div-->
 
                             <div class="row">
-                            <div class="col-sm-5">  
+                            <div class="col-sm-5">
 
                               <div class="form-group stacked-textfields" id="Symbols">
                                 <!--start symbols div-->
-                              
+
                                 <div>
                                     <label>Symbols:</label>
                                 </div>
@@ -376,7 +377,7 @@
                             </div>
                             <!--end symbols div-->
 
-                            <div class="col-sm-5"> 
+                            <div class="col-sm-5">
 
                                 <div class="form-group stacked-textfields" id="Colors">
                                 <!--start colors div-->
@@ -394,13 +395,13 @@
 
                             </div>
                           </div> <!--end row for color and symbols div-->
-                           
+
                             <!--end colors div-->
                             <div class="form-group">
                                 <!--start reset defaults div-->
                                 <!--Reset defaults must come after create_logo so that hitting enter creates a logo-->
-                                <input type="submit" class="btn btn-default btn-sm" name="cmd_reset" value= "Reset Defaults"> 
-                                
+                                <input type="submit" class="btn btn-default btn-sm" name="cmd_reset" value= "Reset Defaults">
+
                             </div>
                             <!--end reset defaults div-->
                         </div>
@@ -408,7 +409,7 @@
 
                         <!--start 4th thumbnail group-->
                         <div class="thumbnail clearfix" id="thumbnail-4">
-                         
+
                             <div class="form-group">
                                 <!--start create weblogo bottom button div-->
                                  <button class="btn btn-success btn-lg" type="submit" name="cmd_create" id="last-button">
